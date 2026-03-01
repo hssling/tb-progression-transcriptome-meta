@@ -1,0 +1,22 @@
+name: kaggle-kernel-push
+
+on:
+  workflow_dispatch:
+
+jobs:
+  push-kernel:
+    runs-on: ubuntu-latest
+    if: ${{ secrets.KAGGLE_USERNAME != '' && secrets.KAGGLE_KEY != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup kaggle creds
+        run: |
+          mkdir -p ~/.kaggle
+          cat > ~/.kaggle/kaggle.json <<EOF
+          {"username":"${{ secrets.KAGGLE_USERNAME }}","key":"${{ secrets.KAGGLE_KEY }}"}
+          EOF
+          chmod 600 ~/.kaggle/kaggle.json
+      - name: Push kernel
+        run: |
+          python -m pip install kaggle
+          kaggle kernels push -p .
