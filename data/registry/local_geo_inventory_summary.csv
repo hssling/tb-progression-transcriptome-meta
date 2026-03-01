@@ -1,0 +1,45 @@
+gse_id,n_files_found,in_current_subset,example_dir
+GSE101705,12,False,D:\research-automation\TB multiomics\TB-Outcome-ML-Pipeline
+GSE103147,2,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\metadata
+GSE107991,30,False,D:\research-automation\TB multiomics\TB-Outcome-ML-Pipeline
+GSE107992,2,False,D:\research-automation\TB multiomics\TB-Outcome-ML-Pipeline\geo_data
+GSE107993,14,False,D:\research-automation\TB multiomics\TB-Outcome-ML-Pipeline\geo_data
+GSE107994,34,True,D:\research-automation\TB multiomics\TB-Outcome-ML-Pipeline
+GSE107995,2,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\metadata
+GSE112104,6,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\expression\cache
+GSE117435,4,False,D:\research-automation\TB multiomics\tb progression transcriptomic\data\raw\GSE117435
+GSE121212,2,False,D:\research-automation\TB multiomics\Allergy_MultiModal_Discovery\data
+GSE151263,4,False,D:\research-automation\TB multiomics\TB Chromatin Priming Multiomics\CPI_MultiDisease_Extension\1_data_raw\sepsis
+GSE152532,12,False,D:\research-automation\TB multiomics\TB-Outcome-ML-Pipeline
+GSE153326,2,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\metadata
+GSE153340,2,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\metadata
+GSE154386,4,False,D:\research-automation\TB multiomics\TB Chromatin Priming Multiomics\CPI_MultiDisease_Extension\1_data_raw\dengue
+GSE157103,6,False,D:\research-automation\TB multiomics\LongCOVID_Risk_Prediction\data\geo_cache
+GSE157657,10,False,D:\research-automation\TB multiomics\TB-Outcome-ML-Pipeline\geo_data
+GSE167232,4,False,D:\research-automation\TB multiomics\TB Chromatin Priming Multiomics\v2_extracted\TB-Chromatin-Priming-Multiomics_v2\1_data_raw
+GSE177477,2,False,D:\research-automation\TB multiomics\LongCOVID_Risk_Prediction\data\geo_cache
+GSE179417,2,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\metadata
+GSE181143,28,False,D:\research-automation\TB multiomics\TB drug discovery\v2_extracted\src
+GSE19151,6,False,D:\research-automation\TB multiomics\BeeStingThrombosis_Discovery\data
+GSE19187,6,False,D:\research-automation\TB multiomics\Allergy_MultiModal_Discovery\data
+GSE193777,10,True,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\metadata
+GSE193979,198,False,D:\research-automation\TB multiomics\TB-Outcome-ML-Pipeline
+GSE19435,2,False,D:\research-automation\TB multiomics\TB-Outcome-ML-Pipeline
+GSE19491,36,False,D:\research-automation\TB multiomics\TB multilayer omics\v3_extracted\tb_rootcause_public_pipeline_v3\data\interim\geo\GSE19491
+GSE242685,4,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\expression\cache
+GSE251849,2,False,D:\research-automation\TB multiomics\LongCOVID_Risk_Prediction\data\geo_cache
+GSE266562,2,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\metadata
+GSE266563,2,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\metadata
+GSE266564,2,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\metadata
+GSE267006,2,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\metadata
+GSE267625,2,False,D:\research-automation\TB multiomics\LongCOVID_Risk_Prediction\data\geo_cache
+GSE287288,68,False,D:\research-automation\TB multiomics\TB Chromatin Priming Multiomics\v2_extracted\TB-Chromatin-Priming-Multiomics_v2\1_data_raw
+GSE29190,6,True,D:\research-automation\TB multiomics\tb progression transcriptomic\data\raw\GSE29190
+GSE42273,2,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\metadata
+GSE4302,4,False,D:\research-automation\TB multiomics\Allergy_MultiModal_Discovery\data
+GSE48000,8,False,D:\research-automation\TB multiomics\BeeStingThrombosis_Discovery\data
+GSE67472,6,False,D:\research-automation\TB multiomics\Allergy_MultiModal_Discovery\data
+GSE79362,36,False,D:\research-automation\TB multiomics\TB-Outcome-ML-Pipeline
+GSE89403,14,False,D:\research-automation\TB multiomics\TB-Outcome-ML-Pipeline
+GSE94438,8,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\expression\cache
+GSE98550,2,False,D:\research-automation\TB multiomics\TB_incipient_dynamic_risk\tb-incipient-dynamic-risk_v2\outputs\metadata

@@ -1,0 +1,17 @@
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+*.egg-info/
+.venv/
+results/
+data/raw/
+data/processed/
+logs/
+submissions/
+.coverage
+*.parquet
+!results/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep

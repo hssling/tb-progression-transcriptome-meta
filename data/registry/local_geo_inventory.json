@@ -1,0 +1,996 @@
+{
+  "GSE89403": {
+    "n_dirs": 5,
+    "n_files": 14,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\analyze_gse89403.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\analyze_gse89403.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\check_gse89403_files.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\check_gse89403_files.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\gse89403_full_metadata.csv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\gse89403_full_metadata.csv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression\\GSE89403_log2ExpGeneNames_AllSamples.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression\\GSE89403_log2ExpGeneNames_AllSamples.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE89403_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE89403_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression\\GSE89403_log2ExpGeneNames_AllSamples.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression\\GSE89403_log2ExpGeneNames_AllSamples.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE89403_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE89403_family.soft.gz"
+    ]
+  },
+  "GSE101705": {
+    "n_dirs": 5,
+    "n_files": 12,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE101705_supplementary",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\geo_data",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE101705_India_metadata.csv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE101705_India_metadata.csv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE101705_India_raw_counts.tsv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE101705_India_raw_counts.tsv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE101705_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE101705_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\geo_data\\GSE101705_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\geo_data\\GSE101705_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\check_gse101705_data.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\check_gse101705_data.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE101705_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE101705_family.soft.gz"
+    ]
+  },
+  "GSE107991": {
+    "n_dirs": 9,
+    "n_files": 30,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE107991_supplementary",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\geo_data",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE107991_London_metadata.csv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE107991_London_metadata.csv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE107991_London_raw_counts.tsv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE107991_London_raw_counts.tsv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE107991_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\Universal_Endemic_Study\\data\\GSE107991_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\geo_data\\GSE107991_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\Universal_Endemic_Study\\geo_data\\GSE107991_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\check_gse107991.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\check_gse107991.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\debug_gse107991_columns.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\debug_gse107991_columns.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE107991_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE107991_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE107991_metadata.csv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE107991_metadata.csv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\inspect_gse107991.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\inspect_gse107991.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\inspect_gse107991_outcomes.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\inspect_gse107991_outcomes.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression\\GSE107991_Raw_counts_Berry_London.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression\\GSE107991_Raw_counts_Berry_London.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE107991_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE107991_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\prepare_gse107991.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\prepare_gse107991.py",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression\\GSE107991_Raw_counts_Berry_London.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression\\GSE107991_Raw_counts_Berry_London.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE107991_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE107991_family.soft.gz"
+    ]
+  },
+  "GSE107994": {
+    "n_dirs": 9,
+    "n_files": 34,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\processed\\GSE107994",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107994"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\check_gse107994.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\check_gse107994.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE107994_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE107994_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression\\GSE107994_Raw_counts_Leicester_with_progressor_longitudinal.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression\\GSE107994_Raw_counts_Leicester_with_progressor_longitudinal.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE107994.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE107994.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE107994_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE107994_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression\\GSE107994_Raw_counts_Leicester_with_progressor_longitudinal.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression\\GSE107994_Raw_counts_Leicester_with_progressor_longitudinal.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE107994.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE107994.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE107994_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE107994_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE107994_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE107994_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\processed\\GSE107994\\expression.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\processed\\GSE107994\\expression.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\processed\\GSE107994\\mapping_report.csv",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\processed\\GSE107994\\mapping_report.csv",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\processed\\GSE107994\\metadata.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\processed\\GSE107994\\metadata.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107994\\GSE107994_Raw_counts_Leicester_with_progressor_longitudinal.xlsx",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107994\\GSE107994_Raw_counts_Leicester_with_progressor_longitudinal.xlsx",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107994\\GSE107994_edgeR_normalized_Leicester_with_progressor_longitudinal.xlsx",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107994\\GSE107994_edgeR_normalized_Leicester_with_progressor_longitudinal.xlsx",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107994\\GSE107994_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107994\\GSE107994_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107994\\expression_raw.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107994\\expression_raw.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107994\\metadata_raw.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107994\\metadata_raw.parquet"
+    ]
+  },
+  "GSE79362": {
+    "n_dirs": 9,
+    "n_files": 36,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE79362"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\debug_gse79362.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\debug_gse79362.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\download_gse79362.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\download_gse79362.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE79362_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE79362_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\get_gse79362_groups.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\get_gse79362_groups.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression\\GSE79362_primarySampleJunctions.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression\\GSE79362_primarySampleJunctions.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression\\GSE79362_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\expression\\GSE79362_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE79362.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE79362.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE79362_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE79362_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression\\GSE79362_primarySampleJunctions.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression\\GSE79362_primarySampleJunctions.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression\\GSE79362_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\expression\\GSE79362_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE79362.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE79362.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE79362_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE79362_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE79362_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE79362_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE79362_primarySampleJunctions.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE79362_primarySampleJunctions.xlsx",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE79362_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE79362_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE79362_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE79362_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE79362\\GSE79362_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE79362\\GSE79362_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE79362\\GSE79362_primarySampleJunctions.xlsx",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE79362\\GSE79362_primarySampleJunctions.xlsx"
+    ]
+  },
+  "GSE152532": {
+    "n_dirs": 3,
+    "n_files": 12,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\deep_dive_gse152532.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\deep_dive_gse152532.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\investigate_gse152532.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\investigate_gse152532.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE152532.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE152532.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE152532_sample_metadata.csv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\metadata\\GSE152532_sample_metadata.csv",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE152532.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE152532.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE152532_sample_metadata.csv",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\outputs\\metadata\\GSE152532_sample_metadata.csv"
+    ]
+  },
+  "GSE181143": {
+    "n_dirs": 4,
+    "n_files": 28,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB drug discovery\\v2_extracted\\src",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\validation_gse181143"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB drug discovery\\v2_extracted\\src\\download_gse181143_expression.py",
+      "D:\\research-automation\\TB multiomics\\TB drug discovery\\v2_extracted\\src\\download_gse181143_expression.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\download_gse181143.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\download_gse181143.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\download_gse181143_expression.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\download_gse181143_expression.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\GSE181143_RAW.tar",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\GSE181143_RAW.tar",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\GSE181143_count_data.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\GSE181143_count_data.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\GSE181143_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\GSE181143_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\GSE181143_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\GSE181143_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\expression_from_matrix.parquet",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\expression_from_matrix.parquet",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\filelist.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\filelist.txt",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\metadata.csv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE181143\\metadata.csv",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\validation_gse181143\\FINAL_validation_metrics.json",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\validation_gse181143\\FINAL_validation_metrics.json",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\validation_gse181143\\gene_mapping.json",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\validation_gse181143\\gene_mapping.json",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\validation_gse181143\\signature_overlap_validation.json",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\validation_gse181143\\signature_overlap_validation.json",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\validation_gse181143\\validation_report.json",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\validation_gse181143\\validation_report.json"
+    ]
+  },
+  "GSE19435": {
+    "n_dirs": 2,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE19435"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\download_gse19435.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\download_gse19435.py"
+    ]
+  },
+  "GSE193979": {
+    "n_dirs": 9,
+    "n_files": 198,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\outputs\\external_validation_GSE193979",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\workflow\\scripts",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\Nature_Medicine_Submission\\Scripts",
+      "D:\\research-automation\\TB multiomics\\TB-Treatment-Failure-Clean\\workflow\\scripts"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\download_manual_gse193979.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\download_manual_gse193979.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\explore_gse193979.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\explore_gse193979.py",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_rawdata.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_rawdata.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_rawdata_v2.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_rawdata_v2.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl.tar",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl.tar",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245975_RSEQ003.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245975_RSEQ003.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245976_RSEQ014.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245976_RSEQ014.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245977_RSEQ036.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245977_RSEQ036.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245978_RSEQ039.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245978_RSEQ039.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245979_RSEQ047.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245979_RSEQ047.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245980_RSEQ053.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245980_RSEQ053.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245981_RSEQ061.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245981_RSEQ061.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245982_RSEQ063.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245982_RSEQ063.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245983_RSEQ066.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245983_RSEQ066.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245984_RSEQ069.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245984_RSEQ069.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245985_RSEQ070.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245985_RSEQ070.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245986_RSEQ072.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245986_RSEQ072.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245987_RSEQ073.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245987_RSEQ073.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245988_RSEQ086.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245988_RSEQ086.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245989_RSEQ095.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245989_RSEQ095.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245990_RSEQ109.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245990_RSEQ109.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245991_RSEQ117.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245991_RSEQ117.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245992_RSEQ120.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245992_RSEQ120.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245993_RSEQ135.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245993_RSEQ135.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245994_RSEQ157.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245994_RSEQ157.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245995_RSEQ168.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245995_RSEQ168.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245996_RSEQ180.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245996_RSEQ180.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245997_RSEQ181.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245997_RSEQ181.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245998_RSEQ193.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245998_RSEQ193.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245999_RSEQ195.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6245999_RSEQ195.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246000_RSEQ202.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246000_RSEQ202.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246001_RSEQ204.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246001_RSEQ204.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246002_RSEQ205.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246002_RSEQ205.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246003_RSEQ209.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246003_RSEQ209.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246004_RSEQ211.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246004_RSEQ211.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246005_RSEQ214.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246005_RSEQ214.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246006_RSEQ220.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246006_RSEQ220.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246007_RSEQ233.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246007_RSEQ233.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246008_RSEQ266.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246008_RSEQ266.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246009_RSEQ271.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246009_RSEQ271.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246010_RSEQ280.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246010_RSEQ280.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246011_RSEQ285.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246011_RSEQ285.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246012_RSEQ288.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246012_RSEQ288.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246013_RSEQ289.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246013_RSEQ289.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246014_RSEQ290.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246014_RSEQ290.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246015_RSEQ292.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246015_RSEQ292.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246016_RSEQ293.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246016_RSEQ293.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246017_RSEQ297.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246017_RSEQ297.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246018_RSEQ299.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246018_RSEQ299.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246019_RSEQ309.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246019_RSEQ309.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246020_RSEQ314.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246020_RSEQ314.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246021_RSEQ315.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246021_RSEQ315.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246022_RSEQ323.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246022_RSEQ323.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246023_RSEQ336.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246023_RSEQ336.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246024_RSEQ337.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246024_RSEQ337.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246025_RSEQ349.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246025_RSEQ349.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246026_RSEQ350.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246026_RSEQ350.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246027_RSEQ352.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246027_RSEQ352.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246028_RSEQ355.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE193979_suppl\\GSM6246028_RSEQ355.txt.gz"
+    ]
+  },
+  "GSE121212": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE121212_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE121212_family.soft.gz"
+    ]
+  },
+  "GSE19187": {
+    "n_dirs": 1,
+    "n_files": 6,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE19187_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE19187_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE19187_ml_ready.csv",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE19187_ml_ready.csv",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE19187_processed.csv",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE19187_processed.csv"
+    ]
+  },
+  "GSE4302": {
+    "n_dirs": 1,
+    "n_files": 4,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE4302_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE4302_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE4302_ml_ready.csv",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE4302_ml_ready.csv"
+    ]
+  },
+  "GSE67472": {
+    "n_dirs": 1,
+    "n_files": 6,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE67472_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE67472_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE67472_ml_ready.csv",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE67472_ml_ready.csv",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE67472_processed.csv",
+      "D:\\research-automation\\TB multiomics\\Allergy_MultiModal_Discovery\\data\\GSE67472_processed.csv"
+    ]
+  },
+  "GSE19151": {
+    "n_dirs": 1,
+    "n_files": 6,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data\\GSE19151_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data\\GSE19151_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data\\GSE19151_gene_expression.csv",
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data\\GSE19151_gene_expression.csv",
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data\\GSE19151_phenotypes.csv",
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data\\GSE19151_phenotypes.csv"
+    ]
+  },
+  "GSE48000": {
+    "n_dirs": 2,
+    "n_files": 8,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data",
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\outputs\\tables"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data\\GSE48000_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data\\GSE48000_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data\\GSE48000_gene_expression.csv",
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data\\GSE48000_gene_expression.csv",
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data\\GSE48000_phenotypes.csv",
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\data\\GSE48000_phenotypes.csv",
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\outputs\\tables\\feature_importance_GSE48000.csv",
+      "D:\\research-automation\\TB multiomics\\BeeStingThrombosis_Discovery\\outputs\\tables\\feature_importance_GSE48000.csv"
+    ]
+  },
+  "GSE157103": {
+    "n_dirs": 2,
+    "n_files": 6,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache",
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\workflow\\scripts"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache\\GSE157103_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache\\GSE157103_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache\\GSE157103_genes.tpm.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache\\GSE157103_genes.tpm.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\workflow\\scripts\\build_gse157103_dataset.py",
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\workflow\\scripts\\build_gse157103_dataset.py"
+    ]
+  },
+  "GSE177477": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache\\GSE177477_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache\\GSE177477_family.soft.gz"
+    ]
+  },
+  "GSE251849": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache\\GSE251849_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache\\GSE251849_family.soft.gz"
+    ]
+  },
+  "GSE267625": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache\\GSE267625_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\LongCOVID_Risk_Prediction\\data\\geo_cache\\GSE267625_family.soft.gz"
+    ]
+  },
+  "GSE154386": {
+    "n_dirs": 1,
+    "n_files": 4,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\CPI_MultiDisease_Extension\\1_data_raw\\dengue"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\CPI_MultiDisease_Extension\\1_data_raw\\dengue\\GSE154386_RAW.tar",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\CPI_MultiDisease_Extension\\1_data_raw\\dengue\\GSE154386_RAW.tar",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\CPI_MultiDisease_Extension\\1_data_raw\\dengue\\GSE154386_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\CPI_MultiDisease_Extension\\1_data_raw\\dengue\\GSE154386_series_matrix.txt.gz"
+    ]
+  },
+  "GSE151263": {
+    "n_dirs": 1,
+    "n_files": 4,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\CPI_MultiDisease_Extension\\1_data_raw\\sepsis"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\CPI_MultiDisease_Extension\\1_data_raw\\sepsis\\GSE151263_RAW.tar",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\CPI_MultiDisease_Extension\\1_data_raw\\sepsis\\GSE151263_RAW.tar",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\CPI_MultiDisease_Extension\\1_data_raw\\sepsis\\GSE151263_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\CPI_MultiDisease_Extension\\1_data_raw\\sepsis\\GSE151263_series_matrix.txt.gz"
+    ]
+  },
+  "GSE167232": {
+    "n_dirs": 1,
+    "n_files": 4,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE167232_bal_integrated.RDS",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE167232_bal_integrated.RDS",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE167232_bal_integrated.RDS.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE167232_bal_integrated.RDS.gz"
+    ]
+  },
+  "GSE287288": {
+    "n_dirs": 5,
+    "n_files": 68,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\2_data_intermediate",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\3_analysis",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\4_results\\tables"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743123_DTB_01_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743123_DTB_01_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743123_DTB_01_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743123_DTB_01_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743123_DTB_01_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743123_DTB_01_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743124_DTB_02_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743124_DTB_02_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743124_DTB_02_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743124_DTB_02_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743124_DTB_02_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743124_DTB_02_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743125_DTB_03_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743125_DTB_03_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743125_DTB_03_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743125_DTB_03_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743125_DTB_03_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743125_DTB_03_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743126_DTB_04_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743126_DTB_04_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743126_DTB_04_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743126_DTB_04_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743126_DTB_04_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743126_DTB_04_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743127_DTB_05_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743127_DTB_05_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743127_DTB_05_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743127_DTB_05_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743127_DTB_05_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743127_DTB_05_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743128_DTB_06_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743128_DTB_06_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743128_DTB_06_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743128_DTB_06_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743128_DTB_06_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743128_DTB_06_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743129_DTB_07_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743129_DTB_07_barcodes.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743129_DTB_07_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743129_DTB_07_features.tsv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743129_DTB_07_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743129_DTB_07_matrix.mtx.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743130_DTB_01-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743130_DTB_01-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743131_DTB_02-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743131_DTB_02-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743132_DTB_03-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743132_DTB_03-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743133_DTB_04-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743133_DTB_04-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743134_DTB_05-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743134_DTB_05-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743135_DTB_06-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743135_DTB_06-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743136_DTB_07-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288\\GSM8743136_DTB_07-T_filtered_contig_annotations.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288_RAW.tar",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288_RAW.tar",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288_files.txt",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\1_data_raw\\GSE287288_files.txt",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\2_data_intermediate\\seu_gse287288_dtb.rds",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\2_data_intermediate\\seu_gse287288_dtb.rds",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\3_analysis\\12_gse287288_dtb_analysis.R",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\3_analysis\\12_gse287288_dtb_analysis.R",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\4_results\\tables\\DEG_GSE287288_DTB.csv",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\4_results\\tables\\DEG_GSE287288_DTB.csv",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\4_results\\tables\\Table_CPI_GSE287288_DTB.csv",
+      "D:\\research-automation\\TB multiomics\\TB Chromatin Priming Multiomics\\v2_extracted\\TB-Chromatin-Priming-Multiomics_v2\\4_results\\tables\\Table_CPI_GSE287288_DTB.csv"
+    ]
+  },
+  "GSE19491": {
+    "n_dirs": 4,
+    "n_files": 36,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\interim\\geo\\GSE19491",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\raw\\geo\\GSE19491",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\figures",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\tables"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\interim\\geo\\GSE19491\\GSE19491_expr_preprocessed.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\interim\\geo\\GSE19491\\GSE19491_expr_preprocessed.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\interim\\geo\\GSE19491\\GSE19491_module_scores.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\interim\\geo\\GSE19491\\GSE19491_module_scores.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\interim\\geo\\GSE19491\\GSE19491_pheno.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\interim\\geo\\GSE19491\\GSE19491_pheno.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\raw\\geo\\GSE19491\\GPL6947.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\raw\\geo\\GSE19491\\GPL6947.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\raw\\geo\\GSE19491\\GSE19491_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\raw\\geo\\GSE19491\\GSE19491_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\raw\\geo\\GSE19491\\expression.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\raw\\geo\\GSE19491\\expression.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\raw\\geo\\GSE19491\\features.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\raw\\geo\\GSE19491\\features.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\raw\\geo\\GSE19491\\pheno.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\data\\raw\\geo\\GSE19491\\pheno.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\figures\\GSE19491_PCA_after.png",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\figures\\GSE19491_PCA_after.png",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\figures\\GSE19491_PCA_before.png",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\figures\\GSE19491_PCA_before.png",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\figures\\GSE19491_module_correlation_heatmap.png",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\figures\\GSE19491_module_correlation_heatmap.png",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\figures\\GSE19491_module_distributions.png",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\figures\\GSE19491_module_distributions.png",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\tables\\GSE19491_module_correlations.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\tables\\GSE19491_module_correlations.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\tables\\GSE19491_module_summary_stats.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\tables\\GSE19491_module_summary_stats.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\tables\\GSE19491_pca_after.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\tables\\GSE19491_pca_after.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\tables\\GSE19491_pca_before.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\tables\\GSE19491_pca_before.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\tables\\GSE19491_wgcna_MEs.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\tables\\GSE19491_wgcna_MEs.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\tables\\GSE19491_wgcna_assoc.csv",
+      "D:\\research-automation\\TB multiomics\\TB multilayer omics\\v3_extracted\\tb_rootcause_public_pipeline_v3\\reports\\tables\\GSE19491_wgcna_assoc.csv"
+    ]
+  },
+  "GSE107993": {
+    "n_dirs": 3,
+    "n_files": 14,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107993"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE107993_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE107993_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE107993_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE107993_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107993\\GSE107993_Raw_counts_Leicester_non_progressor_longitudnal_only.xlsx",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107993\\GSE107993_Raw_counts_Leicester_non_progressor_longitudnal_only.xlsx",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107993\\GSE107993_edgeR_normalized_Leicester_non_progressor_longitudnal_only.xlsx",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107993\\GSE107993_edgeR_normalized_Leicester_non_progressor_longitudnal_only.xlsx",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107993\\GSE107993_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107993\\GSE107993_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107993\\expression_raw.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107993\\expression_raw.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107993\\metadata_raw.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107993\\metadata_raw.parquet"
+    ]
+  },
+  "GSE107995": {
+    "n_dirs": 2,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE107995"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE107995_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE107995_family.soft.gz"
+    ]
+  },
+  "GSE117435": {
+    "n_dirs": 1,
+    "n_files": 4,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE117435"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE117435\\GSE117435_RawCounts.txt.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE117435\\GSE117435_RawCounts.txt.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE117435\\GSE117435_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE117435\\GSE117435_family.soft.gz"
+    ]
+  },
+  "GSE193777": {
+    "n_dirs": 2,
+    "n_files": 10,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE193777"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE193777_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE193777_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE193777\\GSE193777_expression_matrix.xlsx",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE193777\\GSE193777_expression_matrix.xlsx",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE193777\\GSE193777_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE193777\\GSE193777_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE193777\\expression_raw.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE193777\\expression_raw.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE193777\\metadata_raw.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE193777\\metadata_raw.parquet"
+    ]
+  },
+  "GSE29190": {
+    "n_dirs": 1,
+    "n_files": 6,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE29190"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE29190\\GSE29190_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE29190\\GSE29190_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE29190\\expression_raw.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE29190\\expression_raw.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE29190\\metadata_raw.parquet",
+      "D:\\research-automation\\TB multiomics\\tb progression transcriptomic\\data\\raw\\GSE29190\\metadata_raw.parquet"
+    ]
+  },
+  "GSE107992": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE107992_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE107992_family.soft.gz"
+    ]
+  },
+  "GSE157657": {
+    "n_dirs": 3,
+    "n_files": 10,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE157657_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB-Outcome-ML-Pipeline\\geo_data\\GSE157657_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE157657_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE157657_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE157657_norm.data.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE157657_norm.data.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE157657_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE157657_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE157657_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE157657_family.soft.gz"
+    ]
+  },
+  "GSE103147": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE103147_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE103147_family.soft.gz"
+    ]
+  },
+  "GSE112104": {
+    "n_dirs": 2,
+    "n_files": 6,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE112104_normalizedCounts_brazil_all51.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE112104_normalizedCounts_brazil_all51.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE112104_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE112104_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE112104_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE112104_family.soft.gz"
+    ]
+  },
+  "GSE153326": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE153326_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE153326_family.soft.gz"
+    ]
+  },
+  "GSE153340": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE153340_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE153340_family.soft.gz"
+    ]
+  },
+  "GSE179417": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE179417_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE179417_family.soft.gz"
+    ]
+  },
+  "GSE242685": {
+    "n_dirs": 2,
+    "n_files": 4,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE242685_batch2_fc_counts.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE242685_batch2_fc_counts.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE242685_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE242685_family.soft.gz"
+    ]
+  },
+  "GSE266562": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE266562_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE266562_family.soft.gz"
+    ]
+  },
+  "GSE266563": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE266563_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE266563_family.soft.gz"
+    ]
+  },
+  "GSE266564": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE266564_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE266564_family.soft.gz"
+    ]
+  },
+  "GSE267006": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE267006_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE267006_family.soft.gz"
+    ]
+  },
+  "GSE42273": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE42273_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE42273_family.soft.gz"
+    ]
+  },
+  "GSE94438": {
+    "n_dirs": 2,
+    "n_files": 8,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE94438_GC6_juncCounts_raw_Star.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE94438_GC6_juncCounts_raw_Star.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE94438_rawCounts_GeneNames_AllSamples.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE94438_rawCounts_GeneNames_AllSamples.csv.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE94438_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\expression\\cache\\GSE94438_series_matrix.txt.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE94438_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE94438_family.soft.gz"
+    ]
+  },
+  "GSE98550": {
+    "n_dirs": 1,
+    "n_files": 2,
+    "dirs": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata"
+    ],
+    "files": [
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE98550_family.soft.gz",
+      "D:\\research-automation\\TB multiomics\\TB_incipient_dynamic_risk\\tb-incipient-dynamic-risk_v2\\outputs\\metadata\\GSE98550_family.soft.gz"
+    ]
+  }
+}

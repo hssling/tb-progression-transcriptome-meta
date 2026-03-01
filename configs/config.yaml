@@ -1,0 +1,87 @@
+project:
+  name: tb-progression-transcriptome-meta
+  seed: 42
+  mode: full
+
+paths:
+  raw_data: data/raw
+  registry_dir: data/registry
+  processed_data: data/processed
+  results_dir: results
+  logs_dir: results/logs
+  checkpoint_dir: results/logs/checkpoints
+  cache_dir: .cache
+
+discovery:
+  enabled: true
+  max_gse: 30
+  email: tbmeta@example.org
+  tool: tbmeta
+  rate_limit_seconds: 0.34
+  query_terms:
+    - tuberculosis progressor whole blood
+    - incident TB household contacts transcriptome
+    - latent tuberculosis progression PBMC
+    - TB risk signature adolescent cohort study
+
+curation:
+  min_samples_preferred: 30
+  require_human: true
+  curated_csv: data/registry/registry_real_subset.csv
+
+download:
+  allow_geo: true
+  retries: 3
+  timeout_seconds: 40
+  synthetic_if_missing: true
+  max_supplementary_mb: 120
+  skip_keywords: ["splice"]
+
+preprocess:
+  platform_map:
+    microarray: ["GPL10558", "GPL570", "GPL6947"]
+    rnaseq: ["RNA-seq", "Illumina"]
+  drop_ambiguous_genes: true
+  min_genes: 50
+  convert_ensembl_to_hgnc: true
+
+outcome:
+  window_months: 24
+  baseline_strategy: baseline_only
+  positive_labels: ["progressor", "incident_tb", "case", "active tb", "subclinical", "incipient"]
+  negative_labels: ["nonprogressor", "control", "healthy", "ltbi", "latent tb infection", "latent"]
+
+analysis:
+  top_n_genes: 25
+  random_state: 42
+  loco_min_cohorts: 2
+  models: ["elastic_net", "linear_svm", "gene_set_score"]
+  include_xgboost: false
+  run_pathway: true
+
+runtime:
+  resume: true
+  n_jobs: 1
+  low_memory: true
+
+openclaw:
+  enabled: true
+  endpoint: ""
+  endpoint_env: OPENCLAW_ENDPOINT
+  provider: openai
+  model: gpt-5
+  openai_api_key_env: OPENAI_API_KEY
+  api_key_env: OPENCLAW_API_KEY
+  timeout_seconds: 30
+
+dashboard:
+  host: 127.0.0.1
+  port: 8501
+
+manuscript:
+  output_main: manuscripts/manuscript.md
+  output_supplement: manuscripts/supplementary_methods.md
+
+citations:
+  output_bib: manuscripts/references.bib
+  software_citation_file: CITATION.md
