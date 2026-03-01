@@ -1,7 +1,7 @@
 {
-  "id": "tbmeta/tb-progression-transcriptome-meta",
+  "id": "jkhospital/tb-progression-transcriptome-meta",
   "title": "TB Progression Transcriptome Meta Pipeline",
-  "code_file": "kaggle/notebook/tbmeta_kaggle_training.ipynb",
+  "code_file": "notebook/tbmeta_kaggle_training.ipynb",
   "language": "python",
   "kernel_type": "notebook",
   "is_private": true,
