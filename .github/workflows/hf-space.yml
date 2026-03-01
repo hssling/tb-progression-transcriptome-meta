@@ -10,9 +10,17 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    if: ${{ secrets.HF_TOKEN != '' && secrets.HF_SPACE_ID != '' }}
     steps:
       - uses: actions/checkout@v4
+      - name: Validate required secrets
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_SPACE_ID: ${{ secrets.HF_SPACE_ID }}
+        run: |
+          if [ -z "$HF_TOKEN" ] || [ -z "$HF_SPACE_ID" ]; then
+            echo "HF_TOKEN and HF_SPACE_ID secrets are required."
+            exit 1
+          fi
       - name: Setup git
         run: |
           git config --global user.name "github-actions[bot]"
