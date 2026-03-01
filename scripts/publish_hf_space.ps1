@@ -15,6 +15,17 @@ if (Test-Path ".hf_space_tmp") {
 }
 git clone $spaceUrl ".hf_space_tmp"
 Copy-Item "deploy/huggingface_space/*" ".hf_space_tmp/" -Recurse -Force
+if (Test-Path "results/tables") {
+  New-Item -ItemType Directory -Path ".hf_space_tmp/results" -Force | Out-Null
+  Copy-Item "results/tables" ".hf_space_tmp/results/" -Recurse -Force
+}
+if (Test-Path "results/figures") {
+  New-Item -ItemType Directory -Path ".hf_space_tmp/results" -Force | Out-Null
+  Copy-Item "results/figures" ".hf_space_tmp/results/" -Recurse -Force
+}
+if (Test-Path "manuscripts") {
+  Copy-Item "manuscripts" ".hf_space_tmp/" -Recurse -Force
+}
 Push-Location ".hf_space_tmp"
 git add .
 if (-not (git diff --cached --quiet)) {

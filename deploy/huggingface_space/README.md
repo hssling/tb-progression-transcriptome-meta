@@ -6,6 +6,7 @@ colorTo: green
 sdk: streamlit
 sdk_version: 1.40.0
 app_file: app.py
+python_version: "3.11"
 pinned: false
 ---
 
@@ -15,11 +16,12 @@ pinned: false
 2. Push these files to the Space root:
 - `app.py`
 - `requirements.txt`
-3. Also include this repository content (or mount it as a submodule) so the `tbmeta` CLI and config are available.
-4. Set optional secrets in Space settings:
+3. Default publish mode copies generated `results/` and `manuscripts/` for artifact viewing.
+4. Optional: include full repository + `tbmeta` install if you want in-Space pipeline execution.
+5. Set optional secrets in Space settings:
 - `OPENAI_API_KEY`
 - `OPENCLAW_API_KEY`
-5. Launch the Space and use the "Run Full Pipeline" button.
+6. Launch the Space.
 
 Note:
 - Free CPU Spaces may be slow for full runs.
