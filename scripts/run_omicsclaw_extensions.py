@@ -35,6 +35,22 @@ def load_shared_centered_matrix() -> tuple[pd.DataFrame, pd.DataFrame]:
     return centered, meta
 
 
+def bh_adjust(pvalues: list[float]) -> list[float]:
+    n = len(pvalues)
+    order = np.argsort(pvalues)
+    ranked = np.array(pvalues, dtype=float)[order]
+    adjusted = np.empty(n, dtype=float)
+    prev = 1.0
+    for i in range(n - 1, -1, -1):
+        rank = i + 1
+        value = ranked[i] * n / rank
+        prev = min(prev, value)
+        adjusted[i] = min(prev, 1.0)
+    out = np.empty(n, dtype=float)
+    out[order] = adjusted
+    return out.tolist()
+
+
 def positive_gene_scale(expr: pd.DataFrame) -> pd.DataFrame:
     scaled = expr.copy()
     for col in scaled.columns:
@@ -87,6 +103,7 @@ def run_nnls_deconvolution(expr: pd.DataFrame, meta: pd.DataFrame) -> tuple[pd.D
             }
         )
     summary_df = pd.DataFrame(summary_rows).sort_values("ttest_pvalue").reset_index(drop=True)
+    summary_df["fdr_bh"] = bh_adjust(summary_df["ttest_pvalue"].tolist())
     summary_df.to_csv(OUT_DIR / "nnls_celltype_summary.csv", index=False)
 
     means = coef_df.groupby("progressor")[list(signature.columns)].mean().T
@@ -216,6 +233,7 @@ def run_coexpression(expr: pd.DataFrame, meta: pd.DataFrame) -> tuple[pd.DataFra
     summary_df = pd.DataFrame(summary_rows).sort_values("ttest_pvalue").reset_index(drop=True)
     hub_df = pd.DataFrame(hub_rows)
     overlap_df = pd.DataFrame(overlap_rows)
+    summary_df["fdr_bh"] = bh_adjust(summary_df["ttest_pvalue"].tolist())
     eigengene_df.to_csv(OUT_DIR / "coexpression_module_eigengenes.csv", index=False)
     summary_df.to_csv(OUT_DIR / "coexpression_module_summary.csv", index=False)
     hub_df.to_csv(OUT_DIR / "coexpression_hub_genes.csv", index=False)
