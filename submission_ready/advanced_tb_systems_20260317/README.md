@@ -8,6 +8,7 @@ Contents
 - 03_Highlights.docx
 - 04_Supplementary_Methods_and_Figures.docx
 - 05_Cover_Letter.docx
+- 06_OmicsClaw_Extensions.docx
 - internal_review_log.md
 
 Source analysis directory

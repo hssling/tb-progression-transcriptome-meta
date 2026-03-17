@@ -13,6 +13,7 @@ from docx.shared import Inches, Pt
 
 ROOT = Path(__file__).resolve().parents[1]
 ANALYSIS_DIR = ROOT / "results" / "advanced_analysis"
+OMICSCLAW_DIR = ROOT / "results" / "omicsclaw_extensions"
 OUT_DIR = ROOT / "submission_ready" / "advanced_tb_systems_20260317"
 REPO_URL = "https://github.com/hssling/tb-progression-transcriptome-meta"
 
@@ -380,6 +381,121 @@ def build_supplement(data: AdvancedData) -> Path:
     return out
 
 
+def build_omicsclaw_extension_docx() -> Path | None:
+    if not OMICSCLAW_DIR.exists():
+        return None
+    summary_path = OMICSCLAW_DIR / "nnls_celltype_summary.csv"
+    module_path = OMICSCLAW_DIR / "coexpression_module_summary.csv"
+    overlap_path = OMICSCLAW_DIR / "coexpression_module_signature_overlap.csv"
+    if not summary_path.exists() or not module_path.exists():
+        return None
+
+    cell_df = pd.read_csv(summary_path).round(3)
+    module_df = pd.read_csv(module_path).round(3)
+    overlap_df = pd.read_csv(overlap_path) if overlap_path.exists() else pd.DataFrame()
+
+    doc = Document()
+    set_style(doc)
+    add_plain_paragraph(doc, "OmicsClaw-Informed Extension Analyses", bold=True, center=True)
+    add_plain_paragraph(
+        doc,
+        "This supplement summarizes two additional analysis layers inspired by OmicsClaw bulk-RNA workflows: "
+        "marker-based NNLS deconvolution and WGCNA-style coexpression analysis."
+    )
+    add_plain_paragraph(
+        doc,
+        "These outputs are intended to add biological context to the advanced tuberculosis progression manuscript. "
+        "They should be interpreted as supportive analyses rather than stand-alone validation of mechanism."
+    )
+    add_heading(doc, "Immune Deconvolution", 1)
+    add_plain_paragraph(
+        doc,
+        "A conservative NNLS framework was applied using canonical blood-cell marker genes present in the shared-gene "
+        "matrix. The resulting coefficients are best interpreted as relative composition proxies."
+    )
+    add_table(
+        doc,
+        cell_df.rename(
+            columns={
+                "cell_type": "Cell type",
+                "mean_progressor": "Mean progressor",
+                "mean_nonprogressor": "Mean non-progressor",
+                "delta_progressor_minus_nonprogressor": "Delta",
+                "ttest_pvalue": "p value",
+            }
+        ),
+        "Supplementary Table A1. NNLS-derived cell-type score summary.",
+    )
+    add_figure(
+        doc,
+        OMICSCLAW_DIR / "nnls_celltype_barplot.png",
+        "Supplementary Figure A1. Mean NNLS cell-type scores by progressor status.",
+    )
+    add_figure(
+        doc,
+        OMICSCLAW_DIR / "nnls_celltype_boxplots.png",
+        "Supplementary Figure A2. Distribution of NNLS cell-type scores across progressors and non-progressors.",
+    )
+    add_heading(doc, "Coexpression Modules", 1)
+    add_plain_paragraph(
+        doc,
+        "A WGCNA-style unsigned coexpression analysis was performed on the most variable shared genes after "
+        "cohort centering. Modules were summarized by eigengenes and compared by progressor status."
+    )
+    add_table(
+        doc,
+        module_df.rename(
+            columns={
+                "module": "Module",
+                "n_genes": "Genes",
+                "mean_progressor": "Mean progressor",
+                "mean_nonprogressor": "Mean non-progressor",
+                "delta_progressor_minus_nonprogressor": "Delta",
+                "ttest_pvalue": "p value",
+            }
+        ),
+        "Supplementary Table A2. Coexpression module-trait summary.",
+    )
+    if not overlap_df.empty:
+        add_table(
+            doc,
+            overlap_df.rename(
+                columns={
+                    "module": "Module",
+                    "n_signature_overlap": "Bayesian signature overlap",
+                    "signature_genes": "Overlapping genes",
+                }
+            ),
+            "Supplementary Table A3. Overlap between coexpression modules and top Bayesian genes.",
+        )
+    add_figure(
+        doc,
+        OMICSCLAW_DIR / "coexpression_module_trait_barplot.png",
+        "Supplementary Figure A3. Coexpression module eigengene differences by progressor status.",
+    )
+    add_figure(
+        doc,
+        OMICSCLAW_DIR / "coexpression_module_boxplots.png",
+        "Supplementary Figure A4. Top module eigengene distributions in progressors and non-progressors.",
+    )
+    add_heading(doc, "Cohort Expansion Note", 1)
+    note_path = OMICSCLAW_DIR / "omicsclaw_literature_note.md"
+    if note_path.exists():
+        for line in note_path.read_text(encoding="utf-8").splitlines():
+            clean = line.strip()
+            if not clean:
+                continue
+            if clean.startswith("#"):
+                continue
+            if clean.startswith("- "):
+                doc.add_paragraph(clean[2:], style="List Bullet")
+            else:
+                add_plain_paragraph(doc, clean)
+    out = OUT_DIR / "06_OmicsClaw_Extensions.docx"
+    doc.save(out)
+    return out
+
+
 def build_cover_letter() -> Path:
     doc = Document()
     set_style(doc)
@@ -440,6 +556,7 @@ def build_package_summary() -> Path:
         "- 03_Highlights.docx",
         "- 04_Supplementary_Methods_and_Figures.docx",
         "- 05_Cover_Letter.docx",
+        "- 06_OmicsClaw_Extensions.docx",
         "- internal_review_log.md",
         "",
         "Source analysis directory",
@@ -497,6 +614,7 @@ def main() -> None:
     build_highlights()
     build_supplement(data)
     build_cover_letter()
+    build_omicsclaw_extension_docx()
     build_review_note()
     build_package_summary()
     build_validation_report()
