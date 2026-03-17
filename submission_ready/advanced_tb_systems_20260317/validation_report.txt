@@ -1,6 +1,6 @@
 Advanced submission package validation
 Manuscript path: 02_Manuscript.docx
-Approximate manuscript words (paragraph text only): 2381
+Approximate manuscript words (paragraph text only): 2904
 Contains Table 1-4 in order: True
 Contains Figure 1-4 in order: True
 Contains References section: True
