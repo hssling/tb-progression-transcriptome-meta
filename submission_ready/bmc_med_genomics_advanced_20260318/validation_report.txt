@@ -1,0 +1,11 @@
+Advanced submission package validation
+Manuscript path: 02_Manuscript.docx
+Approximate manuscript words (paragraph text only): 3548
+Contains Table 1-4 in order: True
+Contains Figure 1-4 in order: True
+Contains References section: True
+Contains Declarations section: True
+Contains deconvolution caveat: True
+Contains coexpression caveat: True
+Evidence boundary note: advanced shared-gene analysis restricted to GSE107994 and GSE193777.
+Interpretive limit note: DAG is conceptual and not used as causal proof.
