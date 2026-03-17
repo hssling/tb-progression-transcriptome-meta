@@ -1,0 +1,5 @@
+- Public TB transcriptomic cohorts supported reproducible progression-signal discovery.
+- A 25-gene host signature was led by MILR1, VSIG4, CCR2, CD36, and FZD5.
+- Best leave-one-cohort-out performance reached AUC-ROC 0.914 in GSE107994.
+- Biological signals suggested phagocytosis, myeloid activation, and immune regulation.
+- Current evidence supports biomarker discovery, not immediate clinical deployment.

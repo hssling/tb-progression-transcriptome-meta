@@ -1,0 +1,12 @@
+abstract_words=231
+body_words=2086
+reference_count=15
+table_count=3
+figure_count=2
+superscript_count=13
+citation_min=1
+citation_max=15
+has_author_name_in_main=False
+title_has_short_title=True
+title_has_corresponding=True
+title_has_conflict=True

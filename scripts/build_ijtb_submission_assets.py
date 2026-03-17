@@ -12,7 +12,7 @@ from docx.shared import Inches, Pt
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_DIR = ROOT / "submission_ready" / "ijtb_20260317_rev3"
+OUT_DIR = ROOT / "submission_ready" / "ijtb_20260317_rev4"
 REPO_URL = "https://github.com/hssling/tb-progression-transcriptome-meta"
 
 AUTHOR_NAME = "Siddalingaiah H S"
@@ -166,7 +166,7 @@ def build_main_manuscript(data: ManuscriptData) -> Path:
         "Blood-based host transcriptomic signatures are attractive because they are non-sputum based, mechanistically informative, and potentially useful in asymptomatic high-risk contacts. Important studies have already shown that blood RNA signatures can anticipate disease risk and capture biological heterogeneity along the tuberculosis spectrum.[[3-6]]",
         "However, reproducibility remains the main obstacle. Published signatures often lose performance when applied to independent cohorts with different recruitment designs, assay platforms, or preprocessing pipelines. Multi-cohort evaluations have also shown that transcriptomic classifiers are sensitive to hidden study structure and analytic choices.[[6,7]]",
         "Public datasets are therefore useful only if they are handled conservatively. A scientifically sound public-data study must separate cohort discovery from cohort validation, avoid information leakage, and keep its claims bounded by the actual harmonized labels that are available.",
-        "The present study was designed as a reproducible public-data meta-analysis aimed at identifying host blood genes associated with tuberculosis progression. The secondary aim was to package the analysis as a journal-ready submission while retaining transparent reporting, simple language, and strict alignment between the manuscript claims and the available outputs."
+        "The present study was designed as a reproducible public-data meta-analysis aimed at identifying host blood genes associated with tuberculosis progression. A secondary objective was to present the findings in a clear and conservative manner, with the interpretation kept strictly aligned to the available data and validation results."
     ]
     for paragraph in intro:
         add_cited_paragraph(doc, paragraph)
@@ -216,7 +216,7 @@ def build_main_manuscript(data: ManuscriptData) -> Path:
         "Another limitation is that public metadata do not always preserve the time-to-event resolution needed for stronger statements about how many months before disease onset the signal becomes clinically useful. The current manuscript therefore avoids claims that go beyond the available labels.",
         "The balance between simplicity and robustness is another important point. The gene-set-score model performed well despite its relative simplicity, which is encouraging from a translational perspective. Complex models can be attractive computationally, but simpler score-based approaches are often easier to audit, explain, and translate into low-resource laboratory settings. The present results suggest that parsimony may be an advantage rather than a weakness in this domain.",
         "The signature also remains clinically interpretable. Genes such as CCR2, CD36, VSIG4, ITGB2, and IRAK3 do not read like arbitrary machine-selected identifiers; they point toward host processes that tuberculosis clinicians and immunology researchers already recognize. That interpretability matters because biomarker adoption depends not only on numerical performance but also on whether the biology appears credible and understandable.",
-        "Even with these limitations, the study remains useful. It identifies a biologically interpretable candidate gene set, demonstrates that cross-cohort signal retention is achievable, and provides a reproducible submission package that can be updated as more progression-ready cohorts are integrated.",
+        "Even with these limitations, the study remains useful. It identifies a biologically interpretable candidate gene set, demonstrates that cross-cohort signal retention is achievable, and provides a reproducible analytical framework that can be updated as more progression-ready cohorts are integrated.",
         "Future work should focus on three areas: adding more prospective progression cohorts, improving calibration after broader cohort harmonization, and translating the most stable genes into practical multiplex assays. The latter step should prioritize genes that are statistically strong, mechanistically understandable, and technically feasible for targeted testing.",
         "Overall, the manuscript is best read as a rigorous biomarker-discovery and reproducibility study. That framing is scientifically more honest than presenting the current signature as a finished diagnostic tool, and it is more likely to remain useful as additional public datasets become available."
     ]
@@ -249,7 +249,7 @@ def build_main_manuscript(data: ManuscriptData) -> Path:
 
     add_heading(doc, "Tables", 1)
     table1 = data.dataset_summary.loc[data.dataset_summary["Status"].str.contains("Primary", na=False), ["GEO_ID", "Platform", "Total_Samples", "Groups", "PMID"]].rename(columns={"GEO_ID": "Cohort", "Total_Samples": "Samples", "Groups": "Clinical groups"})
-    add_table(doc, table1, "Table 1. Primary cohorts included in the current submission-ready analysis.")
+    add_table(doc, table1, "Table 1. Primary cohorts included in the current analysis.")
     table2 = data.meta_gene_list.loc[:, ["gene", "meta_effect", "meta_z", "meta_fdr", "i2"]].head(12).rename(columns={"gene": "Gene", "meta_effect": "Meta effect", "meta_z": "Meta z score", "meta_fdr": "FDR", "i2": "I2"})
     add_table(doc, table2, "Table 2. Leading progression-associated genes from the random-effects synthesis.", {"Meta effect": 3, "Meta z score": 3, "I2": 1})
     table3 = data.loco_performance.rename(columns={"left_out_cohort": "Left-out cohort", "auc_roc": "AUC-ROC", "auc_pr": "AUC-PR", "brier": "Brier score"})
