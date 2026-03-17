@@ -12,7 +12,7 @@ from docx.shared import Inches, Pt
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_DIR = ROOT / "submission_ready" / "ijtb_20260317"
+OUT_DIR = ROOT / "submission_ready" / "ijtb_20260317_rev2"
 REPO_URL = "https://github.com/hssling/tb-progression-transcriptome-meta"
 
 AUTHOR_NAME = "Siddalingaiah H S"
@@ -329,6 +329,7 @@ def build_checklist() -> Path:
         "Tables and figures placed at the end of the manuscript after the references section.",
         "Funding, conflict of interest, ethics, consent, data availability, and code availability statements included.",
         "Cover letter prepared.",
+        "Highlights file prepared for optional Elsevier submission fields.",
         "Optional supplementary appendix prepared for supporting information not placed in the main article.",
     ]
     for idx, item in enumerate(items, start=1):
@@ -336,6 +337,28 @@ def build_checklist() -> Path:
     out = OUT_DIR / "05_IJTB_Submission_Checklist.docx"
     doc.save(out)
     return out
+
+
+def build_highlights() -> tuple[Path, Path]:
+    bullets = [
+        "Public TB transcriptomic cohorts supported reproducible progression-signal discovery.",
+        "A 25-gene host signature was led by MILR1, VSIG4, CCR2, CD36, and FZD5.",
+        "Best leave-one-cohort-out performance reached AUC-ROC 0.914 in GSE107994.",
+        "Biological signals suggested phagocytosis, myeloid activation, and immune regulation.",
+        "Current evidence supports biomarker discovery, not immediate clinical deployment.",
+    ]
+    txt_path = OUT_DIR / "07_IJTB_Highlights.txt"
+    txt_path.write_text("\n".join(f"- {bullet}" for bullet in bullets) + "\n", encoding="utf-8")
+
+    doc = Document()
+    set_style(doc, double_spacing=False)
+    add_heading(doc, "Highlights", 1)
+    add_plain_paragraph(doc, "Prepared for optional Elsevier highlights upload.")
+    for bullet in bullets:
+        add_plain_paragraph(doc, f"- {bullet}")
+    docx_path = OUT_DIR / "07_IJTB_Highlights.docx"
+    doc.save(docx_path)
+    return txt_path, docx_path
 
 
 def build_supplement(data: ManuscriptData) -> Path:
@@ -368,6 +391,8 @@ def build_readme() -> Path:
         "- 04_IJTB_Author_Statements.docx",
         "- 05_IJTB_Submission_Checklist.docx",
         "- 06_IJTB_Supplementary_Appendix.docx",
+        "- 07_IJTB_Highlights.txt",
+        "- 07_IJTB_Highlights.docx",
         "- ijtb_submission_package.zip",
     ])
     out = OUT_DIR / "README.md"
@@ -395,6 +420,8 @@ def main() -> None:
         build_supplement(data),
         build_readme(),
     ]
+    txt_highlights, docx_highlights = build_highlights()
+    files.extend([txt_highlights, docx_highlights])
     files.append(package(files))
     for file in files:
         print(file.relative_to(ROOT))
