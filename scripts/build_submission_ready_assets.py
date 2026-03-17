@@ -169,13 +169,13 @@ def build_main_article(data: dict[str, pd.DataFrame]) -> Path:
     add_heading(doc, "Abstract", 1)
     abstract = textwrap.dedent(
         """
-        Background: Blood transcriptomic signatures are promising tools for identifying people at risk of progression from latent Mycobacterium tuberculosis infection to active disease, but reproducibility across cohorts and assay platforms remains a persistent limitation.
+        Background: Tuberculosis remains one of the leading infectious causes of death worldwide, and the ability to identify individuals who are progressing from latent or incipient infection toward active disease remains a major unmet need. Blood transcriptomic biomarkers are attractive because they are non-sputum based and biologically informative, but reproducibility across cohorts and assay platforms remains a central obstacle.
 
-        Methods: Public blood transcriptomic datasets relevant to tuberculosis progression were curated from GEO. Three primary cohorts were processed, harmonized, and summarized, with two cohorts contributing directly comparable binary labels for leave-one-cohort-out validation. Random-effects meta-analysis was combined with stability-guided feature ranking and three classifiers: elastic net, linear support vector machine, and a simple gene-set score.
+        Methods: We assembled a reproducible public-data workflow for tuberculosis progression transcriptomics using curated GEO studies. Three primary cohorts were processed in the current package, comprising 533 samples overall, while two cohorts contributed harmonized binary labels for strict leave-one-cohort-out validation. Gene-level effects were combined by random-effects meta-analysis, candidate genes were ranked by stability and meta z-score, and three classification approaches were assessed: elastic net, linear support vector machine, and a simple gene-set score. Functional interpretation used exported Gene Ontology enrichment outputs.
 
-        Results: The analysis prioritised a 25-gene progression-associated signature. Top-ranked genes included MILR1, VSIG4, CCR2, CD36, FZD5, AQP1, and IRAK3. The best leave-one-cohort-out result was obtained by the gene-set-score model in GSE107994 (AUC-ROC 0.914; AUC-PR 0.828). Mean AUC-ROC values were 0.884 for the gene-set-score model, 0.838 for linear SVM, and 0.780 for elastic net. Enrichment analysis implicated angiogenesis-linked immune remodeling, phagocytosis, leukocyte-mediated immunity, and myeloid activation.
+        Results: The analysis prioritized a 25-gene host signature associated with tuberculosis progression. Leading genes included MILR1, VSIG4, CCR2, CD36, FZD5, AQP1, CRISPLD2, and IRAK3. The strongest leave-one-cohort-out performance was observed for the gene-set-score model when GSE107994 was held out, with AUC-ROC 0.914 and AUC-PR 0.828. Mean AUC-ROC values were 0.884 for the gene-set-score model, 0.838 for linear SVM, and 0.780 for elastic net. Enrichment analysis emphasized angiogenesis-related remodeling, leukocyte-mediated immunity, myeloid activation, and phagocytosis.
 
-        Conclusions: A reproducible public-data workflow can recover a coherent host blood signature associated with tuberculosis progression, but the present evidence base remains constrained by limited harmonized progression cohorts and pending cross-platform validation in microarray studies. The current package is positioned as a reproducible biomarker-discovery resource suitable for a methods-forward translational journal.
+        Conclusions: A transparent public-data workflow can recover a coherent host blood transcriptomic program associated with tuberculosis progression. However, the present evidence remains best interpreted as a reproducible biomarker-discovery resource rather than a locked clinical test because harmonized progression cohorts are limited and cross-platform external validation remains incomplete.
         """
     ).strip()
     for paragraph in abstract.split("\n\n"):
@@ -184,19 +184,22 @@ def build_main_article(data: dict[str, pd.DataFrame]) -> Path:
     add_heading(doc, "Introduction", 1)
     intro_paragraphs = [
         (
-            "Tuberculosis remains a major infectious disease challenge, and the transition from latent infection to active disease "
-            "is the most actionable window for preventive intervention. Host blood transcriptomics has emerged as a practical non-sputum "
-            "approach for identifying this transition, but published signatures often degrade when they are applied outside the discovery cohort."
+            "According to the World Health Organization Global Tuberculosis Report 2025, an estimated 10.7 million people developed tuberculosis in 2024 and 1.23 million died from the disease. These figures underline that earlier identification of people moving from latent infection toward active disease remains a major public health priority."
         ),
         (
-            "The central problem is not only biological heterogeneity but also inconsistent cohort definitions, platform effects, feature mapping, "
-            "and data leakage during validation. Public datasets remain valuable for addressing this problem if they are reprocessed within a single "
-            "transparent workflow and judged with genuinely external validation."
+            "The transition from latent or incipient infection to symptomatic tuberculosis is the most actionable stage for preventive intervention. A blood-based biomarker would be especially attractive because it could be deployed when sputum-based diagnostics are unavailable, insensitive, or impractical in asymptomatic high-risk contacts."
         ),
         (
-            "This study therefore aimed to assemble a reproducible TB progression transcriptomic workflow spanning cohort identification, preprocessing, "
-            "harmonization, gene-level meta-analysis, pathway analysis, and leave-one-cohort-out model assessment. The objective was not to make a "
-            "premature clinical claim, but to generate a transparent and submission-ready biomarker-discovery resource anchored to real public data."
+            "Host transcriptomics has emerged as one of the most biologically compelling approaches to this problem. The ACS study by Zak et al. showed that a blood RNA signature could anticipate future tuberculosis, while Singhania et al. demonstrated that tuberculosis infection states are transcriptionally heterogeneous rather than cleanly binary. More recent work in household contacts from Southern India further strengthened the case that host blood biosignatures can capture subclinical and incipient disease biology."
+        ),
+        (
+            "Despite that progress, reproducibility remains the field's central weakness. Published signatures often lose performance when transferred across cohorts, geographies, platforms, or preprocessing pipelines. Some of that attenuation reflects genuine biological heterogeneity, but some reflects preventable methodological issues such as inconsistent gene mapping, weak harmonization, and data leakage caused by random row-wise validation strategies that ignore study boundaries."
+        ),
+        (
+            "Public datasets are therefore both an opportunity and a stress test. They provide independent cohorts collected under different conditions, but they also expose how difficult it is to make a signature travel across studies without inflating claims. Public-data biomarker work is only useful if it is explicit about what was actually harmonized, what was only identified as a candidate resource, and what level of validation the resulting model genuinely achieved."
+        ),
+        (
+            "The aim of the present study was to construct a reproducible workflow spanning cohort curation, harmonization, gene-level meta-analysis, machine learning validation, pathway interpretation, and manuscript generation. We sought to identify a coherent host blood signature associated with tuberculosis progression while keeping the final claims aligned with the actual support provided by the processed cohorts and exported outputs."
         ),
     ]
     for paragraph in intro_paragraphs:
@@ -205,28 +208,25 @@ def build_main_article(data: dict[str, pd.DataFrame]) -> Path:
     add_heading(doc, "Methods", 1)
     method_sections = {
         "Study design and data sources": (
-            "The workflow queried public GEO studies relevant to host blood transcriptomic signatures of TB progression or related incipient disease states. "
-            "Eligible studies were human whole-blood or PBMC transcriptomic datasets with usable phenotype annotations, processed expression matrices or count data, "
-            "and progression-relevant cohort structure."
+            "This study used a reproducible public-data workflow centered on GEO studies relevant to host blood transcriptomic signatures of tuberculosis progression, incipient tuberculosis, subclinical tuberculosis, or closely related progression-focused designs. Eligible studies were restricted to human whole-blood or PBMC transcriptomic datasets with usable phenotype annotations and sufficient expression data to support downstream harmonization."
         ),
         "Cohort curation": (
-            "The current submission package retains three primary downloaded and processed datasets: GSE107994, GSE193777, and GSE79362. "
-            "Microarray cohorts GSE19491, GSE37250, and GSE39940 were retained as identified candidates for future expansion but were not yet carried through the same validation path."
+            "The curated registry identified six relevant public studies. Three cohorts were retained as primary processed cohorts in the current package: GSE107994, representing the Leicester cohort; GSE193777, representing adult household contacts from Southern India; and GSE79362, corresponding to the ACS prospective cohort. Additional microarray studies, including GSE19491, GSE37250, and GSE39940, were catalogued as candidate cohorts for future expansion but were not advanced through the same finalized validation path in this release."
         ),
         "Preprocessing and harmonization": (
-            "RNA-seq matrices were normalized and harmonized to gene-level features. Duplicate mappings were collapsed conservatively, and datasets were restricted to shared gene space. "
-            "The reporting package documents the current common-feature analysis table rather than claiming a broader harmonization than the available labels support."
+            "Expression matrices were normalized and represented at gene level wherever possible. Duplicate or ambiguous mappings were collapsed conservatively to avoid inflated feature counts, after which datasets were restricted to a shared feature space prior to meta-analysis and model assessment. The current manuscript intentionally describes only the harmonized space supported by the exported results rather than implying universal compatibility across every identified cohort."
         ),
         "Meta-analysis": (
-            "Per-gene effects were combined using a random-effects framework. Genes were ranked by absolute meta z-score, with false-discovery adjustment retained for prioritization. "
-            "This package reports the top progression-associated genes directly from the exported meta-analysis table."
+            "Per-gene effects were combined using a random-effects framework, and candidate progression-associated genes were ranked by absolute meta z-score. False-discovery adjustment and heterogeneity metrics were retained in the output tables. Because only two cohorts currently contributed directly comparable binary labels to the main validation framework, the meta-analysis was interpreted as a prioritization strategy for robust candidate genes rather than as proof of a universally stable clinical signature."
         ),
         "Model development and validation": (
-            "Model assessment used leave-one-cohort-out validation to avoid within-cohort leakage. Three approaches were assessed: elastic net logistic regression, linear SVM, and a gene-set score. "
-            "Performance was summarized using AUC-ROC, AUC-PR, and Brier score."
+            "Model assessment was built around leave-one-cohort-out validation to reduce information leakage across studies. Three approaches were evaluated: elastic net logistic regression, linear support vector machine, and a simple gene-set score. Performance was summarized using AUC-ROC, AUC-PR, and Brier score. This validation strategy was deliberately harsher than row-wise random splitting because the purpose of the analysis was to test whether a signal could survive true cohort transfer."
         ),
         "Pathway analysis": (
-            "The leading genes were evaluated against Gene Ontology biological-process enrichment outputs from the R reporting pipeline. Enrichment statements in this manuscript are restricted to terms present in the exported results."
+            "The leading genes were interpreted with the exported Gene Ontology biological-process enrichment tables generated by the R reporting pipeline. Only terms directly present in the exported results were used in the narrative. This restriction was intentional and was meant to prevent retrospective over-interpretation of the biology."
+        ),
+        "Reporting strategy": (
+            "The present article was generated as part of a submission-ready reporting workflow that also produces the title page, declarations, supplementary information, cover letter, and journal-targeting notes from version-controlled outputs. This reporting layer was designed to reduce the gap between computational analysis and publication preparation while preserving a clear audit trail back to the repository and exported results."
         ),
     }
     for heading, text in method_sections.items():
@@ -237,8 +237,11 @@ def build_main_article(data: dict[str, pd.DataFrame]) -> Path:
     add_heading(doc, "Curated cohort set", 2)
     add_para(
         doc,
-        "The curated registry identified six relevant public studies, of which three were processed as primary cohorts in the current run. "
-        "These three studies capture geographically distinct designs, including the Leicester cohort, a South Indian household-contact cohort, and the ACS prospective cohort."
+        "The curated registry identified six relevant public studies, of which three were processed as primary cohorts in the current run. These three studies span distinct epidemiological and technical settings, including a Leicester cohort, a Southern India household-contact cohort, and the ACS prospective cohort."
+    )
+    add_para(
+        doc,
+        "Across the primary processed cohorts, 533 samples were represented in the exported summaries. The cohort structures were not interchangeable: some were directly suitable for binary progressor versus nonprogressor modeling, whereas others primarily served as discovery or contextual resources. This asymmetry is a practical constraint in public-data tuberculosis biomarker work and explains why apparently large public resources may still yield only a limited set of fully harmonized validation-ready comparisons."
     )
     cohort_table = data["dataset_summary"].loc[
         data["dataset_summary"]["Status"].str.contains("Primary", na=False),
@@ -249,8 +252,15 @@ def build_main_article(data: dict[str, pd.DataFrame]) -> Path:
     add_heading(doc, "Progression-associated genes", 2)
     add_para(
         doc,
-        "The meta-analysis prioritised genes involved in innate immune regulation, phagocytic activity, leukocyte signaling, and vascular-remodeling programs. "
-        "MILR1 was the top-ranked signal, followed by VSIG4, CCR2, CD36, and FZD5. IRAK3 remained within the leading progression-associated set and supports an interpretation of altered innate immune control."
+        "The random-effects meta-analysis prioritized genes linked to innate immune regulation, phagocytic biology, leukocyte trafficking, and vascular remodeling. MILR1 was the top-ranked signal, followed closely by VSIG4, CCR2, CD36, and FZD5. Several of these genes have plausible mechanistic links to myeloid activation, immune-cell recruitment, tissue remodeling, and counter-regulatory signaling, making the overall ranking biologically coherent rather than a disconnected list of nominally significant transcripts."
+    )
+    add_para(
+        doc,
+        "The exported effect table showed strong positive meta effects for MILR1, VSIG4, CCR2, CD36, FZD5, and AQP1, while genes such as EPN2 and PLD4 showed inverse directionality within the leading ranks. IRAK3 remained among the most strongly associated positive genes and is notable because it encodes a negative regulator of Toll-like receptor signaling. In the setting of tuberculosis progression, this pattern is compatible with a host-response state that combines inflammatory recruitment with regulatory dampening rather than a simple monotonic activation program."
+    )
+    add_para(
+        doc,
+        "The effect sizes in the leading set were not only statistically compelling but also directionally coherent across the limited number of directly comparable cohorts in the current binary analysis. That point matters because robustness across cohorts is more relevant than extremity within a single study when the intended downstream use is cross-setting risk stratification."
     )
     gene_table = data["meta_gene_list"].loc[:, ["gene", "meta_effect", "meta_z", "meta_fdr", "i2"]]
     add_table_from_df(
@@ -264,8 +274,15 @@ def build_main_article(data: dict[str, pd.DataFrame]) -> Path:
     add_heading(doc, "Cross-cohort validation", 2)
     add_para(
         doc,
-        "Cross-cohort performance was strongest for the gene-set-score model, which achieved the best held-out discrimination in GSE107994. "
-        "Linear SVM showed the most balanced calibration among the three tested approaches, whereas the gene-set-score model traded calibration for stronger ranking performance."
+        "Cross-cohort validation was strongest for the gene-set-score model, which produced the best held-out discrimination in GSE107994, with AUC-ROC 0.914 and AUC-PR 0.828. Linear SVM produced somewhat lower ranking performance but a more favorable Brier score profile, suggesting better calibration behavior in the current setting. Elastic net showed the greatest instability across the two held-out cohorts."
+    )
+    add_para(
+        doc,
+        "The validation table illustrates an important translational point: the simplest model was not necessarily the weakest. The gene-set-score approach retained the strongest cross-cohort ranking discrimination even though it did not yield the best calibration. That suggests that the underlying signal is real, but the transformation of that signal into calibrated individual risk estimates will require broader cohort coverage and better prevalence anchoring than is currently available."
+    )
+    add_para(
+        doc,
+        "Performance differences between GSE107994 and GSE193777 also highlight the role of cohort context. The same signature behaved more strongly in one held-out dataset than in the other, which is the kind of result that should be expected in public multi-study biomarker work. Rather than weakening the manuscript, this pattern strengthens the argument for honest external validation and against overfitting-prone discovery strategies."
     )
     perf_table = data["loco_performance"].copy()
     add_table_from_df(
@@ -274,12 +291,23 @@ def build_main_article(data: dict[str, pd.DataFrame]) -> Path:
         "Table 3. Leave-one-cohort-out model performance.",
         round_map={"auc_roc": 3, "auc_pr": 3, "brier": 3},
     )
+    add_para(
+        doc,
+        "The exported validation summary further reported mean AUC-ROC values of 0.884 for the gene-set-score model, 0.838 for linear SVM, and 0.780 for elastic net, with the best left-out cohort being GSE107994. These values support the claim that a progression-related host signal is recoverable across independent cohorts, even though the present package does not yet support a definitive locked model for prospective clinical use."
+    )
 
     add_heading(doc, "Functional interpretation", 2)
     add_para(
         doc,
-        "Enrichment analysis highlighted regulation of angiogenesis, vasculature development, immune effector processes, leukocyte degranulation, myeloid activation, and phagocytosis. "
-        "These results support a host-response pattern that blends inflammatory recruitment with regulatory remodeling rather than a single-axis interferon signal."
+        "Enrichment analysis highlighted regulation of angiogenesis, vasculature development, immune effector processes, leukocyte degranulation, myeloid activation, and phagocytosis. These findings imply that the leading progression-associated genes do not simply reflect a generic inflammatory state; rather, they point to remodeling of the host immune microenvironment, including cell trafficking, endothelial interaction, effector regulation, and phagocytic handling."
+    )
+    add_para(
+        doc,
+        "Several of the leading enriched terms were driven by recurring genes such as CCR2, CD36, FZD5, ITGB2, and SPARC. This recurrence is useful because it ties together the individual gene ranking and pathway-level interpretation. CCR2 is relevant to chemotactic recruitment, CD36 is linked to lipid handling and immune recognition, ITGB2 marks leukocyte adhesion and trafficking, and SPARC is implicated in tissue remodeling."
+    )
+    add_para(
+        doc,
+        "The prominence of IRAK3 adds a further mechanistic layer because it is a negative regulator of Toll-like receptor signaling and may mark a state of dysregulated feedback during incipient disease. Likewise, MILR1 suggests that mast-cell-related inhibitory signaling may deserve more attention than it has received in mainstream tuberculosis transcriptomic discussions."
     )
     pathway_table = data["pathway_enrichment"].loc[:, ["ID", "Description", "GeneRatio", "p.adjust", "geneID"]]
     add_table_from_df(
@@ -293,19 +321,31 @@ def build_main_article(data: dict[str, pd.DataFrame]) -> Path:
     add_heading(doc, "Discussion", 1)
     discussion_paragraphs = [
         (
-            "The main contribution of this work is not only the proposed gene list, but the conversion of a heterogeneous public-data problem into a transparent, reproducible submission package. "
-            "The signature is dominated by genes linked to phagocytic handling, immune-cell trafficking, and regulatory myeloid signaling, which is plausible for an incipient TB state."
+            "The central finding of this study is that a coherent host blood transcriptomic program associated with tuberculosis progression can be recovered from public datasets when the workflow is explicit, cohort boundaries are respected during validation, and the narrative is limited to what the processed data actually support. In that sense, the value of the present work lies not only in the gene list itself but also in the reproducible path by which the list was generated, summarized, and prepared for submission."
         ),
         (
-            "MILR1, VSIG4, CCR2, CD36, FZD5, AQP1, and IRAK3 form a coherent biological core. Rather than claiming definitive clinical readiness, the present evidence supports these genes as a candidate module for external assay development and prospective follow-up."
+            "The leading genes form a plausible biological core. MILR1 emerged as the most prominent signal and is notable because it points beyond the most frequently discussed interferon-centered views of host response. VSIG4, CCR2, CD36, FZD5, AQP1, and IRAK3 reinforce a picture of altered myeloid activation, cell adhesion, immune trafficking, and regulatory feedback. This pattern is compatible with an incipient-disease state in which host defense, immune modulation, and tissue remodeling are occurring simultaneously."
         ),
         (
-            "The limitations are material. Only two cohorts currently support the binary validation framework, cross-platform microarray validation remains pending, and the Brier scores indicate that discrimination is stronger than probability calibration. "
-            "These points are surfaced directly because they matter for journal fit and for the framing of translational claims."
+            "The present findings align with the broader progression-signature literature while remaining distinct from it. The ACS work by Zak et al. established the principle that blood RNA can anticipate disease risk. Singhania et al. showed that host transcriptional states are heterogeneous rather than binary. Rajamanickam et al. extended this perspective to subclinical and incipient disease in household contacts. The current workflow adds a complementary contribution by emphasizing reproducible cross-cohort evaluation and integrating the reporting and submission pipeline into the analytical workflow itself."
         ),
         (
-            "For those reasons, the manuscript is framed for a methods-forward biomarker-discovery submission rather than a high-claim clinical diagnostic paper. "
-            "That positioning is also what makes BMC Personalized Medicine an appropriate first target."
+            "A major strength of the present approach is the refusal to treat random within-study validation as sufficient evidence. In multi-cohort transcriptomics, row-wise random splitting can allow study-specific artifacts to leak into both training and testing sets, inflating performance estimates. By contrast, leave-one-cohort-out validation is harsher but more informative. The fact that the signature retained meaningful discriminatory ability under that framework suggests that the observed signal is not purely cohort-specific."
+        ),
+        (
+            "The limitations remain substantial and must stay central to interpretation. Only two cohorts presently support the harmonized binary validation framework used for the main performance claims. Additional candidate microarray studies have been identified but are not yet integrated into the same finalized validation path. The Brier scores indicate that ranking performance is better than calibration, meaning the current models are better understood as discriminative tools than as directly deployable risk calculators. Public metadata also do not consistently preserve the time-to-event resolution needed for stronger clinical-window claims."
+        ),
+        (
+            "These limitations shape the translational meaning of the manuscript. The current package supports a methods-forward biomarker-discovery claim and offers a useful ranked candidate set for further investigation, including qRT-PCR panel development and prospective cohort validation. It does not yet justify a strong claim that the 25-gene signature is ready for immediate clinical implementation. That distinction is not a weakness; it is the correct interpretation of the available data."
+        ),
+        (
+            "The pathway results help explain why translation may be both promising and difficult. The dominant themes are not narrowly limited to one canonical interferon signature. Instead, the enriched processes indicate immune effector regulation, leukocyte adhesion and degranulation, myeloid activation, phagocytosis, and vascular remodeling. Such a host-response mixture may generalize better than a single-axis inflammatory program, but it may also vary by clinical context, comorbidity, and specimen processing."
+        ),
+        (
+            "Future work should proceed in three directions. First, additional progression cohorts, particularly those with prospective time-to-disease labeling, should be integrated into the same harmonization framework. Second, calibration-focused modeling should be revisited after broader cohort coverage, potentially combining transcriptomic signals with clinical covariates. Third, assay translation should prioritize genes that are not only statistically strong but also biologically interpretable, technically stable, and feasible for multiplex measurement."
+        ),
+        (
+            "From a publication perspective, this manuscript is best positioned as a reproducible translational bioinformatics study rather than a definitive diagnostic benchmark. That framing is appropriate for the evidence generated here and avoids the overstatement that has contributed to skepticism around some previous host-signature reports. The package is intended to narrow the gap between exploratory public-data analysis and journal-ready reporting without disguising the uncertainty that still remains."
         ),
     ]
     for paragraph in discussion_paragraphs:
@@ -314,8 +354,11 @@ def build_main_article(data: dict[str, pd.DataFrame]) -> Path:
     add_heading(doc, "Conclusions", 1)
     add_para(
         doc,
-        "A reproducible public-data workflow identified a biologically coherent host blood signature associated with TB progression risk and generated a complete manuscript package from the available outputs. "
-        "The signature is promising for follow-up, but broader harmonized cohort coverage and external validation remain necessary before stronger translational claims are warranted."
+        "A reproducible public-data workflow identified a biologically coherent host blood transcriptomic signature associated with tuberculosis progression risk and converted that workflow into a submission-ready manuscript package. The leading genes, including MILR1, VSIG4, CCR2, CD36, FZD5, AQP1, and IRAK3, support a model of progression characterized by coordinated innate immune regulation, leukocyte trafficking, phagocytic remodeling, and regulatory feedback."
+    )
+    add_para(
+        doc,
+        "The cross-cohort validation results indicate that this signal is not confined to a single study, but the current evidence remains best understood as a robust discovery resource rather than a finalized clinical test. Additional harmonized cohorts, better-calibrated models, and prospective external validation are the necessary next steps for translational advancement."
     )
 
     add_heading(doc, "Figures", 1)
@@ -357,10 +400,20 @@ def build_main_article(data: dict[str, pd.DataFrame]) -> Path:
 
     add_heading(doc, "References", 1)
     references = [
+        "World Health Organization. Global Tuberculosis Report 2025. Geneva: World Health Organization; 2025.",
+        "Houben RMGJ, Dodd PJ. The global burden of latent tuberculosis infection: a re-estimation using mathematical modelling. PLoS Medicine. 2016;13:e1002152.",
         "Zak DE, Penn-Nicholson A, Scriba TJ, et al. A blood RNA signature for tuberculosis disease risk: a prospective cohort study. Lancet. 2016;387:2312-2322.",
         "Singhania A, Verma R, Graham CM, et al. A modular transcriptional signature identifies phenotypic heterogeneity of human tuberculosis infection. Nature Communications. 2018;9:2308.",
-        "Rajamanickam A, Munisankar S, Dolla CK, et al. Host blood-based biosignatures for subclinical tuberculosis in household contacts. Scientific Reports. 2023;13:1085.",
+        "Rajamanickam A, Munisankar S, Dolla CK, et al. Host blood-based biosignatures for subclinical TB and incipient TB: a prospective study of adult TB household contacts in Southern India. Frontiers in Immunology. 2022;13.",
+        "Sweeney TE, Braviak L, Tato CM, Khatri P. Genome-wide expression for diagnosis of pulmonary tuberculosis: a multicohort analysis. Lancet Respiratory Medicine. 2016;4:213-224.",
+        "Warsinske HC, Rao AM, Moreira FMF, et al. Assessment of validity of a blood-based 3-gene signature score for progression and diagnosis of tuberculosis, disease severity, and treatment response. JAMA Network Open. 2018;1:e183779.",
+        "Davis S, Meltzer PS. GEOquery: a bridge between the Gene Expression Omnibus and BioConductor. Bioinformatics. 2007;23:1846-1847.",
         "Ritchie ME, Phipson B, Wu D, et al. limma powers differential expression analyses for RNA-sequencing and microarray studies. Nucleic Acids Research. 2015;43:e47.",
+        "Leek JT, Johnson WE, Parker HS, Jaffe AE, Storey JD. The sva package for removing batch effects and other unwanted variation in high-throughput experiments. Bioinformatics. 2012;28:882-883.",
+        "Balduzzi S, Rucker G, Schwarzer G. How to perform a meta-analysis with R: a practical tutorial. Evidence-Based Mental Health. 2019;22:153-160.",
+        "Friedman J, Hastie T, Tibshirani R. Regularization paths for generalized linear models via coordinate descent. Journal of Statistical Software. 2010;33:1-22.",
+        "Wu T, Hu E, Xu S, et al. clusterProfiler 4.0: a universal enrichment tool for interpreting omics data. Innovation. 2021;2:100141.",
+        "Wesche H, Gao X, Li X, et al. IRAK-M is a novel member of the interleukin-1 receptor-associated kinase family. Journal of Biological Chemistry. 1999;274:19403-19410.",
         "The tb-progression-transcriptome-meta repository. Available at: https://github.com/hssling/tb-progression-transcriptome-meta.",
     ]
     for ref in references:

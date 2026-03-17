@@ -1,6 +1,6 @@
 # Submission-ready package
 
-Generated on: 2026-03-17 21:10:34
+Generated on: 2026-03-17 21:37:37
 
 Primary target journal: BMC Personalized Medicine (Springer Nature)
 Fallback journal: Infection (Springer)
