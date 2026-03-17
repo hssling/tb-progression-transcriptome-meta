@@ -12,7 +12,7 @@ from docx.shared import Inches, Pt
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_DIR = ROOT / "submission_ready" / "ijtb_20260317_rev2"
+OUT_DIR = ROOT / "submission_ready" / "ijtb_20260317_rev3"
 REPO_URL = "https://github.com/hssling/tb-progression-transcriptome-meta"
 
 AUTHOR_NAME = "Siddalingaiah H S"
@@ -153,10 +153,10 @@ def build_main_manuscript(data: ManuscriptData) -> Path:
     add_plain_paragraph(doc, TITLE, bold=True, center=True)
 
     add_heading(doc, "Structured Abstract", 1)
-    add_plain_paragraph(doc, "Background/Objectives: Tuberculosis remains a major global health problem, and better tools are needed to identify people who are progressing from latent or incipient infection towards active disease. Blood transcriptomic signatures are promising, but many reported signatures are difficult to reproduce across cohorts and platforms.")
-    add_plain_paragraph(doc, "Methods: We developed a reproducible public-data workflow for tuberculosis progression transcriptomics using curated GEO cohorts. Three primary cohorts were processed, and two cohorts with harmonized binary outcome labels were used for strict leave-one-cohort-out validation. Gene-level effects were synthesized using a random-effects approach, candidate genes were ranked by meta z score and stability, and three classifiers were assessed: elastic net, linear support vector machine, and a gene-set score.")
-    add_plain_paragraph(doc, "Results: The analysis prioritized a 25-gene host signature associated with progression. Leading genes included MILR1, VSIG4, CCR2, CD36, FZD5, AQP1, and IRAK3. The best validation result was produced by the gene-set-score model in the left-out GSE107994 cohort, with AUC-ROC 0.914 and AUC-PR 0.828. Mean AUC-ROC values were 0.884 for the gene-set-score model, 0.838 for linear support vector machine, and 0.780 for elastic net. Enrichment analysis highlighted phagocytosis, immune effector regulation, myeloid activation, and vascular remodeling.")
-    add_plain_paragraph(doc, "Conclusions: Public transcriptomic cohorts can recover a biologically coherent host signature associated with tuberculosis progression, but the current evidence is best interpreted as a robust biomarker-discovery resource rather than a ready-to-deploy clinical test.")
+    add_plain_paragraph(doc, "Background/Objectives: Tuberculosis remains a major global health problem, and better tools are needed to identify progression from latent or incipient infection to active disease. Blood transcriptomic signatures are promising, but reproducibility across cohorts and platforms remains limited.")
+    add_plain_paragraph(doc, "Methods: We developed a reproducible public-data workflow for tuberculosis progression transcriptomics using curated GEO cohorts. Three primary cohorts were processed, and two cohorts with harmonized binary labels were used for leave-one-cohort-out validation. Gene-level effects were synthesized with a random-effects approach, and three classifiers were assessed: elastic net, linear support vector machine, and a gene-set score.")
+    add_plain_paragraph(doc, "Results: The analysis prioritized a 25-gene host signature associated with progression. Leading genes included MILR1, VSIG4, CCR2, CD36, FZD5, AQP1, and IRAK3. The best validation result was produced by the gene-set-score model in the left-out GSE107994 cohort, with AUC-ROC 0.914 and AUC-PR 0.828. Mean AUC-ROC values were 0.884 for the gene-set-score model, 0.838 for linear support vector machine, and 0.780 for elastic net. Enrichment analysis highlighted phagocytosis, myeloid activation, immune regulation, and vascular remodeling.")
+    add_plain_paragraph(doc, "Conclusions: This analysis identified a 25-gene host signature led by MILR1, VSIG4, CCR2, CD36, FZD5, AQP1, and IRAK3, with best leave-one-cohort-out AUC-ROC 0.914. The pathway profile supports phagocytosis, myeloid activation, immune regulation, and vascular remodeling. These findings indicate a reproducible host-response signal linked to tuberculosis progression, but further external validation is needed before clinical use.")
     add_plain_paragraph(doc, "Keywords: biomarker; host response; latent tuberculosis infection; machine learning; transcriptomics")
 
     add_heading(doc, "Introduction", 1)
@@ -224,7 +224,7 @@ def build_main_manuscript(data: ManuscriptData) -> Path:
         add_cited_paragraph(doc, paragraph)
 
     add_heading(doc, "Conclusion", 1)
-    add_cited_paragraph(doc, "A reproducible public-data meta-analysis identified a biologically coherent host blood transcriptomic signature associated with tuberculosis progression. The leading genes and the cross-cohort validation results support the existence of a transferable host-response signal, but broader external validation and improved calibration are still required before clinical translation can be claimed.")
+    add_cited_paragraph(doc, "A reproducible public-data meta-analysis identified a 25-gene host blood signature associated with tuberculosis progression, with leading contributions from MILR1, VSIG4, CCR2, CD36, FZD5, AQP1, and IRAK3. Cross-cohort validation showed that this signal remained detectable outside the discovery setting, with the strongest held-out performance observed in GSE107994. The pathway profile suggests coordinated phagocytic, myeloid, regulatory, and vascular-remodeling responses. These findings support the presence of a transferable host-response signal, but broader external validation and improved calibration are still required before any clinical application can be justified.")
 
     add_heading(doc, "Acknowledgements", 1)
     add_plain_paragraph(doc, "The author acknowledges the investigators who generated and shared the public GEO datasets used in this analysis.")
@@ -237,9 +237,9 @@ def build_main_manuscript(data: ManuscriptData) -> Path:
     add_heading(doc, "Consent", 1)
     add_plain_paragraph(doc, "Not applicable to the current secondary analysis. Original cohort-specific ethics and consent procedures were handled by the primary investigators.")
     add_heading(doc, "Data availability", 1)
-    add_cited_paragraph(doc, "All generated submission files, analysis scripts, and supporting outputs are available in the project repository.[[15]]")
+    add_cited_paragraph(doc, "All generated submission files, analysis scripts, and supporting outputs are available in a public repository.[[15]]")
     add_heading(doc, "Code availability", 1)
-    add_cited_paragraph(doc, "The reproducible codebase used for this analysis and document preparation is available at the project repository.[[15]]")
+    add_cited_paragraph(doc, "The reproducible codebase used for this analysis and document preparation is available in a public repository.[[15]]")
     add_heading(doc, "Declaration on generative AI use", 1)
     add_plain_paragraph(doc, "During manuscript preparation, the author used a generative AI-assisted coding and drafting tool to help structure documents, refine language, and prepare submission files. The author critically reviewed, edited, and accepted full responsibility for the final content.")
 

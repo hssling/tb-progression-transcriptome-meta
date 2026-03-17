@@ -7,7 +7,7 @@ from docx import Document
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PKG = ROOT / "submission_ready" / "ijtb_20260317_rev2"
+PKG = ROOT / "submission_ready" / "ijtb_20260317_rev3"
 MANUSCRIPT = PKG / "02_IJTB_Blinded_Manuscript.docx"
 TITLE_PAGE = PKG / "01_IJTB_Title_Page.docx"
 
