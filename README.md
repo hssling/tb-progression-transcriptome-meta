@@ -97,6 +97,25 @@ tbmeta openclaw-check --config configs/config.yaml
 - Manuscripts: `manuscripts/manuscript.md`, `manuscripts/supplementary_methods.md`
 - References: `manuscripts/references.bib`
 - Submission bundle: `submissions/tbmeta_submission_<timestamp>.zip`
+- Submission-ready journal package: `submission_ready/bmc_personalized_medicine_20260317/`
+
+## Submission-ready Assets
+
+To build the current Springer Nature submission package:
+
+```bash
+python scripts/build_submission_ready_assets.py
+```
+
+This writes a complete DOCX package with:
+- title page and declarations
+- main manuscript with embedded figures/tables
+- supplementary information
+- cover letter
+- journal fit memo
+- ZIP archive for upload/sharing
+
+Documentation for the package is in `docs/submission_ready_package.md`.
 
 ## Custom Cohort List
 

@@ -12,6 +12,8 @@ logs/
 submissions/
 .coverage
 *.parquet
+.hf_space_tmp/
+R_pipeline/processed/
 !results/.gitkeep
 !data/raw/.gitkeep
 !data/processed/.gitkeep
