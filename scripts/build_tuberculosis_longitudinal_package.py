@@ -15,8 +15,8 @@ OUT_DIR = ROOT / "submission_ready" / "tuberculosis_longitudinal_20260318"
 REPO_URL = "https://github.com/hssling/tb-progression-transcriptome-meta"
 
 TITLE = (
-    "Longitudinal reanalysis of a prospective tuberculosis blood RNA-sequencing "
-    "cohort suggests follow-up dynamics in coordinated host-response programs"
+    "Longitudinal blood RNA-sequencing in a prospective tuberculosis cohort "
+    "reveals dynamic host-response programs during follow-up"
 )
 
 
@@ -82,7 +82,7 @@ def build_author_notes() -> Path:
     for line in [
         "The manuscript centers on host response and immunology in tuberculosis using a prospective repeated-measures blood RNA-sequencing cohort.",
         "The framing is longitudinal biology and pathogenesis-oriented, not a literature-only meta-analysis.",
-        "The strongest findings concern coordinated host-response programs rather than a generic public-database ranking exercise.",
+        "The strongest findings concern coordinated host-response programs rather than a generic transcript-ranking exercise.",
     ]:
         doc.add_paragraph(line, style="List Bullet")
     add_paragraph(doc, "")
@@ -165,7 +165,7 @@ def build_validation() -> Path:
         f"Contains AI declaration: {'Use of generative AI' in text}",
         f"Contains Table 1-4 in order: {all(text.find(f'Table {i}') != -1 for i in range(1, 5))}",
         f"Contains Figure 1-4 in order: {all(text.find(f'Figure {i}') != -1 for i in range(1, 5))}",
-        "Editorial-fit note: manuscript is framed as prospective cohort reanalysis, not literature-only meta-analysis.",
+        "Editorial-fit note: manuscript is framed as prospective cohort analysis, not literature-only meta-analysis.",
     ]
     out = OUT_DIR / "validation_report.txt"
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")

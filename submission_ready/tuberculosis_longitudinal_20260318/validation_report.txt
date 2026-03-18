@@ -8,4 +8,4 @@ Contains Data availability statement: True
 Contains AI declaration: True
 Contains Table 1-4 in order: True
 Contains Figure 1-4 in order: True
-Editorial-fit note: manuscript is framed as prospective cohort reanalysis, not literature-only meta-analysis.
+Editorial-fit note: manuscript is framed as prospective cohort analysis, not literature-only meta-analysis.
