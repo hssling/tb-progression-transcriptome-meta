@@ -1,0 +1,11 @@
+Tuberculosis package validation
+Main manuscript: 02_Tuberculosis_Main_Manuscript.docx
+Contains Abstract: True
+Contains Keywords: True
+Contains Declarations section: True
+Contains References section: True
+Contains Data availability statement: True
+Contains AI declaration: True
+Contains Table 1-4 in order: True
+Contains Figure 1-4 in order: True
+Editorial-fit note: manuscript is framed as prospective cohort reanalysis, not literature-only meta-analysis.
