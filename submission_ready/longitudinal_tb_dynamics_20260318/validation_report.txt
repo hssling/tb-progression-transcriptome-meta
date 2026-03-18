@@ -1,5 +1,5 @@
 Longitudinal manuscript package validation
-Approximate manuscript words (paragraph text only): 2712
+Approximate manuscript words (paragraph text only): 3271
 Contains Table 1-4 in order: True
 Contains Figure 1-4 in order: True
 Contains Declarations section: True
