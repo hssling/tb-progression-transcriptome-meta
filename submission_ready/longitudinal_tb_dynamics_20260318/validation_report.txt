@@ -1,0 +1,9 @@
+Longitudinal manuscript package validation
+Approximate manuscript words (paragraph text only): 2151
+Contains Table 1-4 in order: True
+Contains Figure 1-4 in order: True
+Contains Declarations section: True
+Contains References section: True
+Contains IC caution: True
+Contains program-level over gene-level framing: True
+Interpretive limit note: follow-up month is not treated as exact time-to-disease.
