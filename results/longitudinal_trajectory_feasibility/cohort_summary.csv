@@ -1,0 +1,2 @@
+cohort_id,n_samples,n_subjects,progressor_subjects,nonprogressor_subjects,subjects_with_repeat_samples,subjects_with_repeat_timepoints,signature_genes_present
+GSE79362_genelevel,264,107,33,74,73,73,21

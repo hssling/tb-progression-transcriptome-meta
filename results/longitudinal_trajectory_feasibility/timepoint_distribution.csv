@@ -1,0 +1,12 @@
+timepoint_label,progressor_label,n_samples
+DAY0,Non-progressor,40
+DAY0,Progressor,7
+DAY180,Non-progressor,28
+DAY180,Progressor,18
+DAY360,Non-progressor,29
+DAY360,Progressor,21
+DAY540,Non-progressor,39
+DAY540,Progressor,20
+IC,Progressor,16
+OTHER,Non-progressor,30
+OTHER,Progressor,16
