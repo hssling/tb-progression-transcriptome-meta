@@ -1,0 +1,14 @@
+BMC Medical Genomics package validation
+Main manuscript: 02_BMC_Main_Manuscript.docx
+Approximate manuscript words (paragraph text only): 3742
+Contains bracketed citations: True
+Contains Abbreviations section: True
+Contains Declarations section: True
+Contains Authors' contributions section: True
+Contains Acknowledgements section: True
+Contains dataset accession references in availability statement: True
+Availability and code statements cite repository by reference number: True
+Contains Table 1-5 in order: True
+Contains Figure 1-4 in order: True
+Evidence boundary note: primary advanced shared-gene analysis remains restricted to GSE107994 and GSE193777.
+Interpretive limit note: deconvolution is proxy-based and coexpression is supportive rather than causal.
